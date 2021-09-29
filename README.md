@@ -29,6 +29,8 @@ npm install --save-dev semantic-release-chrome
 
 ## Description
 
+FORK to debug failing archiver step.
+
 This package provides a set of [`semantic-release`][semantic-release] plugins for you to easily publish Chrome extensions automatically.
 Besides creating a release on the Chrome webstore, it also writes the correct version to the `manifest.json` and creates a zip file containing everything inside the dist folder, so you can use the official `@semantic-release/github` plugin and upload the release to the GitHub releases page, so your users can easily rollback to an earlier version if a newer one introduces a bad bug.
 

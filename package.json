@@ -1,5 +1,5 @@
 {
-  "name": "@dmitrif/semantic-release-chrome",
+  "name": "dmitrif-semantic-release-chrome",
   "version": "0.0.0-development",
   "main": "dist/index.js",
   "author": "Gabriel Duarte (https://www.gabrielduarte.tech)",

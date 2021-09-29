@@ -27,13 +27,18 @@ const zipFolder = (
   logger: Logger,
 ) => {
   const zipPath = resolve(asset)
-  logger.log('Dist path: %s', distFolder)
   const output = createWriteStream(zipPath)
   const archive = archiver('zip', {
     zlib: { level: 9 },
   })
 
   archive.pipe(output)
+
+  logger.log(
+    'Dist path: %s, current working folder: %s',
+    distFolder || '',
+    process.cwd(),
+  )
 
   archive.directory(distFolder, false)
   archive.finalize()
